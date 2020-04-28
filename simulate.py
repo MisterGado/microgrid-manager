@@ -219,16 +219,6 @@ class Manager():
             
             if dico["type"] == "charging_station":
                 
-                # departure=[0]*4  #departure[i]=1 if the car i leaves the station at t
-                # arrival=[0]*4    #arrival[i]=1 if the car i arrives in the station at t
-                # 
-                # for i in range(4):
-                #     if t==self.scenario[dico["name"]][0,i]:
-                #         departure[i]=1
-                #     if t==self.scenario[dico["name"]][1,i]:
-                #         arrival[i]=1
-                # 
-                # data_to_player = {"departures":departure , "arrivals":arrival}
                 
                 data_to_player = 0
                 

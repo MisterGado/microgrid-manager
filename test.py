@@ -4,14 +4,14 @@ import time
 import visualize as vis
 import os
 
-name='Premiere_simulation_1000j'
+name='Premiere_simulation_100j'
 this_dir = os.path.dirname(os.path.abspath(__file__))
 t = time.time()
 
 manager = Manager(os.path.join(this_dir, "data", "players.json"),
 	os.path.join(this_dir, "data", "prices.csv"))
 
-manager.simulate(1000,name)
+manager.simulate(100,name)
 
 
 # All npy files are dictionaries (inside a 1 length array)

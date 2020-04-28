@@ -190,10 +190,9 @@ def plottotal(dico, unite, titre, labl, path_to_data,name_simulation):
 
 
 def plotCS(dico,unite,titre,labl,path,name_simulation):
-    h=['1','2','3','4']
     for cle,objet in dico.items():
         for cars in range (4):
-            plot_1bis(dico[cle][:,cars,:],unite,titre,labl,cle,h[cars],path + "_" + cle +"_voiture_"+h[cars]+".png",name_simulation)
+            plot_1bis(dico[cle][:,cars,:],unite,titre,labl,cle,str(cars+1),path + "_" + cle +"_voiture_"+str(cars+1)+".png",name_simulation)
         
 
 
